@@ -1,0 +1,3 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/rohit/Workspace/lift-sbt10-templates/lift_basic_sbt10/src/main/resources/props,/home/rohit/Workspace/lift-sbt10-templates/lift_basic_sbt10/target/scala-2.9.1.final/classes/props)[0m
+[0m[[0mdebug[0m] [0m	(/home/rohit/Workspace/lift-sbt10-templates/lift_basic_sbt10/src/main/resources/props/default.props,/home/rohit/Workspace/lift-sbt10-templates/lift_basic_sbt10/target/scala-2.9.1.final/classes/props/default.props)[0m

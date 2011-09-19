@@ -1,0 +1,25 @@
+This repo contains the lift Project templates for SBT 0.10.1 
+
+These templates take the source folder from the Lift project's original SBT templates. 
+
+I have just put the appropriate SBT 0.10.1 build files and added a few plugins to the project/plugins/build.sbt
+
+The plugins are -
+
+- xsbt To support "jetty-run" in SBT 0.10.1
+
+- netbeans To generate a netbeans project if you use that IDE
+
+- eclipse To generate a eclipse project iff you use that IDE
+
+
+From the Lift project's Repo an explanation of what these projects have,
+
+- lift_basic is a basic Lift application with a built-in user class
+             and nice use of Blueprint CSS and HTML5
+
+- lift_blank is a blank Lift project that does not have any model
+             or CSS
+
+
+Along with these I have also added a SBT folder which has sbt-launcher.jar and sbt shell script for SBT 0.10.1
