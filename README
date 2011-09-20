@@ -21,5 +21,7 @@ From the Lift project's Repo an explanation of what these projects have,
 - lift_blank is a blank Lift project that does not have any model
              or CSS
 
+- lift_basic_mongo is a same as basic Lift application using MongoDB instead of 	the embedded H2 DB. We use a custom ProtoUser as there is a bug in the 		PasswordField implementation of Lift Mongo.
+
 
 Along with these I have also added a SBT folder which has sbt-launcher.jar and sbt shell script for SBT 0.10.1
