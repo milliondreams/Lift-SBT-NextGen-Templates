@@ -1,0 +1,6 @@
+#!/bin/sh
+rm ./pom.xml
+sbt make-pom
+cp  target/scala-2.9.1.final/*.pom ./pom.xml -f
+sed -i 's/<packaging>jar</<packaging>war</' pom.xml
+echo 'pom.xml is updated'
