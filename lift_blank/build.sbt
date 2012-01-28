@@ -14,11 +14,10 @@ seq(webSettings :_*)
 }
 
 libraryDependencies ++= Seq(
-  "junit" % "junit" % "4.5" % "test->default",
-  "org.mortbay.jetty" % "jetty" % "6.1.22" % "jetty",
-  "javax.servlet" % "servlet-api" % "2.5" % "provided->default",
-  "com.h2database" % "h2" % "1.2.138",
-  "ch.qos.logback" % "logback-classic" % "0.9.26" % "compile->default"
+  "junit" 		% "junit" 		% "4.5" 	% "test->default",
+  "org.mortbay.jetty" 	% "jetty" 		% "6.1.22" 	% "container",
+  "javax.servlet" 	% "servlet-api" 	% "2.5" 	% "provided->default",
+  "com.h2database" 	% "h2" 			% "1.2.138",
+  "ch.qos.logback" 	% "logback-classic" 	% "0.9.26" 	% "compile->default"
 )
 
-seq(netbeans.NetbeansTasks.netbeansSettings:_*)

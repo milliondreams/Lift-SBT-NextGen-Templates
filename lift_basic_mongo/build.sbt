@@ -1,24 +1,26 @@
-name := "lift_basic_sbt11"
+name := "lift_mongo_basic_sbt11"
 
 scalaVersion := "2.9.1"
 
 seq(webSettings :_*)
 
-//Base dependencies
-libraryDependencies ++= Seq(
-    "net.liftweb" %% "lift-webkit" % "2.4-M4" % "compile->default",
-    "net.liftweb" %% "lift-mapper" % "2.4-M4" % "compile->default",
-    "net.liftweb" %% "lift-wizard" % "2.4-M4" % "compile->default",
-    "net.liftweb" %% "lift-mongodb" % "2.4-M4" % "compile->default",
-    "net.liftweb" %% "lift-mongodb-record" % "2.4-M4" % "compile->default")
+//Lift dependencies
+{
+	var liftVersion = "2.4"
+	libraryDependencies ++= Seq(
+	    "net.liftweb" %% "lift-webkit" 		% liftVersion % "compile->default",
+	    "net.liftweb" %% "lift-mapper" 		% liftVersion % "compile->default",
+	    "net.liftweb" %% "lift-wizard" 		% liftVersion % "compile->default",
+	    "net.liftweb" %% "lift-mongodb" 		% liftVersion % "compile->default",
+	    "net.liftweb" %% "lift-mongodb-record" 	% liftVersion % "compile->default")
+}
 
-//Runtime Deps
+//Other Deps
 libraryDependencies ++= Seq(
-  "junit" % "junit" % "4.5" % "test->default",
-  "org.mortbay.jetty" % "jetty" % "6.1.22" % "jetty",
-  "javax.servlet" % "servlet-api" % "2.5" % "provided->default",
-  "com.h2database" % "h2" % "1.2.138",
-  "ch.qos.logback" % "logback-classic" % "0.9.26" % "compile->default"
+  "junit" 		% "junit" 		% "4.5" 		% "test->default",
+  "org.eclipse.jetty" 	% "jetty-webapp" 	% "8.0.1.v20110908" 	% "container",  
+  "javax.servlet" 	% "servlet-api" 	% "2.5" 		% "provided->default",
+  "ch.qos.logback" 	% "logback-classic" 	% "0.9.26" 		% "compile->default",
+  "com.foursquare" 	%% "rogue"              % "1.1.1" intransitive()
 )
 
-seq(netbeans.NetbeansTasks.netbeansSettings:_*)
